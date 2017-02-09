@@ -3,10 +3,10 @@
  * Created by PhpStorm.
  * User: Jean Freitas
  * Date: 08/02/2017
- * Time: 21:02
+ * Time: 21:12
  */
-namespace Models;
 
+namespace Models;
 class Connect extends \PDO
 {
     private $engine;
