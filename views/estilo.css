@@ -1,0 +1,235 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body{padding:0; margin:0; background-image:url(bg.png); background-repeat:repeat;}
+
+a:link {
+	color: #FFF;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #FFF;
+}
+a:hover {
+	text-decoration: none;
+	color: #FFF;
+}
+a:active {
+	text-decoration: none;
+	color: #FFF;
+}
+
+/** FORM CADASTRO **/
+.table-form{
+	width:900px;
+	height:auto;
+	box-shadow:#333 0px 5px 10px;
+	border-radius: 0px 0px 10px 10px;
+	background-color:#F2F2F2;
+	margin:0 auto;
+	padding-bottom:20px;
+	}
+.h2-form-cadastro{
+	font-family:Tahoma, Geneva, sans-serif;
+	text-transform:uppercase;
+	text-align:center;
+	}
+.h1-form-titulo{
+	font-family:Tahoma, Geneva, sans-serif;
+	text-transform:uppercase;
+	text-align:center;
+    font-size: 14px;
+    text-align: left;
+	}
+.h2-form-titulo{
+	font-family:Tahoma, Geneva, sans-serif;
+	text-transform:uppercase;
+    font-size: 11px;
+    text-align: center;
+	}
+.p-form-cadsastro{
+	font:Tahoma, Geneva, sans-serif;
+	text-transform:uppercase;
+	}
+.p-header{
+    font-family: tahoma;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.input-form-cadastro{
+	width:420px;
+	height:30px;
+	border-radius:10px;
+	border:2px solid #999;
+	font-family:Tahoma, Geneva, sans-serif;
+	text-transform:uppercase;
+	font-size:20px;
+	padding:5px;
+	}
+.input-form-cadastro:focus{
+	background-color:#8A8A8A;
+	color:#fff;
+	border:0px;
+	}
+.input-form-cadastro-sigla{
+	width:50px;
+	height:30px;
+	border-radius:10px;
+	border:2px solid #999;
+	font-family:Tahoma, Geneva, sans-serif;
+	text-transform:uppercase;
+	font-size:16px;
+	padding:5px;
+    margin: 0 auto;
+	}
+.input-relatorio{
+    width:35px;
+	height:15px;
+    background-color: #F2F2F2;
+	border:none;
+    border-bottom: 1px dotted;
+	font-family:Tahoma, Geneva, sans-serif;
+	text-transform:uppercase;
+	font-size:13px;
+	padding:5px;
+}
+.input-relatorio:focus{
+	background-color:#e0e0e0;
+	color:#fff;
+	border:0px;    
+    border-bottom: 2px solid #000;
+    transition: border 1.0s;
+	}
+.input-relatorio-i{
+    width:100%;
+	height:15px;
+    background-color: #F2F2F2;
+	border:none;
+    border-bottom: 1px dotted;
+	font-family:Tahoma, Geneva, sans-serif;
+	text-transform:uppercase;
+	font-size:13px;
+	padding:5px;
+    float: right;
+}
+.input-relatorio-i:focus{
+	color:#fff;
+	border:0px;    
+    border-bottom: 2px solid #000;
+    transition: background #e0e0e0 1.0s;
+	}
+.input-relatorio-txt{
+    width: 100%;
+    min-height: 85%;
+    max-width:95%;
+	height:15px;
+    background-color: #F2F2F2;
+	border:none;
+    border-bottom: 1px dotted;
+	font-family:Tahoma, Geneva, sans-serif;
+	text-transform:uppercase;
+	font-size:13px;
+	padding:5px;
+    float: right;
+}
+.input-relatorio-txt:focus{
+	background-color:#8A8A8A;
+	color:#fff;
+	border:0px;
+	}
+.input-form-cadastro-sigla:focus{
+	background-color:#8A8A8A;
+	color:#fff;
+	border:0px;
+	}
+.btn-form-cadastro{
+	width:100px;
+	height:40px;
+	border-radius: 5px;
+	background-color:#FC0;
+	border: 1px;
+	font-family:Tahoma, Geneva, sans-serif;
+	text-transform:uppercase;
+	font-weight:bold;
+	text-align:center;
+	margin-top:20px;
+	}
+.btn-form-cadastro:hover{
+	background-color:#ffeda7;
+	}
+.select-sinodo{
+	width:auto;
+	height:40px;
+	border-radius:10px;
+	border:2px solid #999;
+	font-family:Tahoma, Geneva, sans-serif;
+	text-transform:uppercase;
+	font-size:12px;
+	padding:5px;
+	}
+.tr-texto{
+    text-transform: uppercase;
+    font-size: 10px;
+    font-family: tahoma;
+    text-align: left;
+    vertical-align: bottom;
+}
+.tr-texto-i{
+    text-transform: uppercase;
+    font-size: 10px;
+    font-family: tahoma;
+    text-align: left;
+    vertical-align: bottom;
+}
+.tr-texto-ii{
+    text-transform: uppercase;
+    font-size: 10px;
+    font-family: tahoma;
+    text-align: left;
+    vertical-align: bottom;
+}
+.tr-titulo-h2{
+    background-color: floralwhite;
+    padding: 10px;
+    margin-top: 0px;
+    border: 0px;
+}
+.tr-titulo-h1{
+    background: #6aafc9; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, #6aafc9, #96d2e8); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left top,#6aafc9, #96d2e8); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left top,#6aafc9, #96d2e8); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(left top,#6aafc9, #96d2e8); /* Standard syntax */
+    padding: 10px;
+    border-radius: 10px 0px 10px 0px;
+}
+.td-btn{
+    text-align: center;
+}
+.menu{
+    margin: 0;
+    padding: 0;margin-bottom: 20px;
+    width: 100%;
+    height: 50px;background: #2c454e; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, #2c454e, #3b6472); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left top,#2c454e, #3b6472); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left top,#2c454e, #3b6472); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(left top,#2c454e, #3b6472); /* Standard syntax */
+    color: #fff;
+    float: left;
+}
+.menu ul {
+    width: 95%;
+    text-align: center;
+    font-family: tahoma;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.menu ul li{
+    display: inline;
+    padding-left: 20px;
+}
+.menu ul li a:hover{
+    color: #96d2e8;
+}

@@ -6,10 +6,9 @@
  * Time: 13:16
  */
 
-namespace Models;
 
 
-class delete
+class Delete
 {
 
 }

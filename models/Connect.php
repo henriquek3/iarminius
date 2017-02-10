@@ -6,7 +6,6 @@
  * Time: 21:12
  */
 
-namespace Models;
 class Connect extends \PDO
 {
     private $engine;

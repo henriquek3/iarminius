@@ -5,14 +5,12 @@
  * Date: 10/02/2017
  * Time: 13:11
  */
-
-namespace Models;
-
+require_once "Connect.php";
 
 class Crud
 {
     public static function select($arg){
-        $pdo = new Pdoinit();
+        $pdo = new Connect();
         $result = $pdo->prepare($arg);
         $result->execute();
         $resultado = $result->fetchAll(PDO::FETCH_ASSOC);
@@ -20,19 +18,19 @@ class Crud
     }
 
     public static function insert($sql){
-        $pdo = new Pdoinit();
+        $pdo = new Connect();
         $result = $pdo->prepare($sql);
         $result->execute();
         return $result;
     }
     public static function delete($sql){
-        $pdo = new Pdoinit();
+        $pdo = new Connect();
         $result = $pdo->prepare($sql);
         $result->execute();
     }
 
     public static function update($sql){
-        $pdo = new Pdoinit();
+        $pdo = new Connect();
         $result = $pdo->prepare($sql);
         $result->execute();
         return $result;

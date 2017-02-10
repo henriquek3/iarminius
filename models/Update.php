@@ -6,10 +6,8 @@
  * Time: 13:17
  */
 
-namespace Models;
 
-
-class update
+class Update
 {
 
 }
