@@ -19,10 +19,14 @@ class Connect extends \PDO
     {
         $this->engine = 'pgsql';
         $this->host = '177.85.98.16';
+        //$this->host = 'localhost';
         $this->port = '5432';
         $this->dbname = 'ipcacoal_teste';
+        //$this->dbname = 'iarminius';
         $this->user = 'ipcacoal_ad';
+        //$this->user = 'postgres';
         $this->pass = 'iarminius';
+        //$this->pass = 'r5758222r';
         $dns = $this->engine.':dbname='.$this->dbname.';host='.$this->host;
 
         try{

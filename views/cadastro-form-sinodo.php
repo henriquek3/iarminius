@@ -10,11 +10,15 @@
 <div id="table-form" class="table-form">
     <?php include("menu.php") ?>
 <form id="form1" name="form1" method="post" action="../controllers/sinodo.php">
-  <table width="600" border="0" align="center">
-    <tr>
-      <td colspan="4"><h2 class="h2-form-cadastro">Cadastrar sínodo</h2></td>
-    </tr>
-    <tr>
+   <table width="95%" border="0" align="center">
+     <tr>
+    <td colspan="8"> <h1 class="h1-form-titulo tr-titulo-h1"> cadastrar sínodo</h1> </td> 
+    </tr>   
+    </table>
+    
+    <table width="600" border="0" align="center">
+   
+    <tr class="tr-texto">
       <td><p class="p-form-cadsastro">Nome</p></td>
       <td><label for="nome"></label>
       <input type="text" required name="nome" id="nome" class="input-form-cadastro"/></td>

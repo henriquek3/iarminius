@@ -10,13 +10,13 @@ class Insert
 {
     public static function sinodos($nome,$sigla)
     {
-        $sql = "INSERT INTO sinodos VALUES ({$nome},{$sigla})";
+        $sql = "INSERT INTO sinodos (nome,sigla) VALUES ('$nome','$sigla')";
         return $sql;
     }
 
     public static function presbiterios($nome,$sigla)
     {
-        $sql = "INSERT INTO presbiterios VALUES ({$nome},{$sigla})";
+        $sql = "INSERT INTO presbiterios (nome,sigla) VALUES ('$nome','$sigla')";
         return $sql;
     }
 }

@@ -11,7 +11,7 @@ class Select
 {
     public static function sinodos()
     {
-        $sql = "SELECT nome,sigla FROM sinodos";
+        $sql = "SELECT id_sinodo AS id,nome,sigla FROM sinodos";
         return $sql;
     }
 }

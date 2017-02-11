@@ -11,8 +11,8 @@ $nome="";
 $sigla="";
 
 if (isset($_POST['nome'])){
-    $nome = $_POST['nome'];
-    $sigla = $_POST['sigla'];
+    $nome = ucwords($_POST['nome']);
+    $sigla = strtoupper($_POST['sigla']);
     echo "Nome: ".$nome."</br>";
     echo "Sigla: ".$sigla."</br><hr/>";
     Crud::insert(Insert::sinodos($nome,$sigla));

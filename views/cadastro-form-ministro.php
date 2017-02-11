@@ -24,7 +24,7 @@
    
     <tr class="tr-texto-i">
     <td>nome</td>
-    <td colspan="5"><input type="text" required="required" name="nome" class="input-relatorio-txt" pattern="[a-z\s]+$" /></td>
+    <td colspan="5"><input required type="text" required="required" name="nome" class="input-relatorio-txt" pattern="[a-z\s]+$" /></td>
     <td>Tipo</td>
     <td><label for="tipoPresbitero"></label>
       <select name="tipoPresbitero" id="tipoPresbitero">
@@ -34,16 +34,16 @@
     </tr>
   <tr class="tr-texto-i">
     <td width="164">Endereço</td>
-    <td colspan="2"><input type="text" required="required" name="endereco" class="input-relatorio-txt" pattern="[a-z\s]+$" /></td>
+    <td colspan="2"><input required type="text" required="required" name="endereco" class="input-relatorio-txt" pattern="[a-z\s]+$" /></td>
     <td width="170">&nbsp;</td>
     <td width="92">número</td>
-    <td width="759"><input type="text" required="required" name="enderecoNumero" class=input-relatorio-i pattern="[0-9]+$" /></td>
+    <td width="759"><input required type="text" required="required" name="enderecoNumero" class=input-relatorio-i pattern="[0-9]+$" /></td>
     <td width="81">complemento</td>
-    <td><input type="text" required="required" name="enderecoComplemento" class="input-relatorio-txt" pattern="[a-z\s]+$" /></td>
+    <td><input required type="text" required="required" name="enderecoComplemento" class="input-relatorio-txt" pattern="[a-z\s]+$" /></td>
   </tr>
   <tr class="tr-texto-i">
     <td>bairro</td>
-    <td width="147"><input type="text" required="required" name="enderecoBairro" class="input-relatorio-txt" pattern="[a-z\s]+$" /></td>
+    <td width="147"><input required type="text" required="required" name="enderecoBairro" class="input-relatorio-txt" pattern="[a-z\s]+$" /></td>
     <td width="41">uf</td>
     <td><select name="estado">
             <option value="uf">UF</option>
@@ -55,24 +55,24 @@
         </select></td>
     <td>cep</td>
     
-    <td><input type="text" required="required" name="cep" class=input-relatorio-i pattern="[0-9]+$" /></td>
+    <td><input required type="text" required="required" name="cep" class=input-relatorio-i pattern="[0-9]+$" /></td>
     </tr>
   <tr class="tr-texto-i">
     <td>telefone</td>
-    <td><input type="text" required="required" name="telefone" class=input-relatorio-i pattern="[0-9]+$" /></td>
+    <td><input required type="text" required="required" name="telefone" class=input-relatorio-i pattern="[0-9]+$" /></td>
     <td>fax</td>
-    <td colspan="1"><input type="text" required="required" name="fax" class=input-relatorio-i pattern="[0-9]+$" /></td>
+    <td colspan="1"><input required type="text" required="required" name="fax" class=input-relatorio-i pattern="[0-9]+$" /></td>
        <td>Cx. Postal</td>
-    <td colspan="1"><input type="text" required="required" name="cxpostal" class=input-relatorio-i pattern="[0-9]+$" /></td>
+    <td colspan="1"><input required type="text" required="required" name="cxpostal" class=input-relatorio-i pattern="[0-9]+$" /></td>
     <td>e-mail</td>
-    <td colspan="2"><input type="email" required="required" name="email" class="input-relatorio-txt" /></td>
+    <td colspan="2"><input required type="email" required="required" name="email" class="input-relatorio-txt" /></td>
   </tr>
     
   </table>
     
     <table width="95%" border="0" align="center">
 <tr>
-    <td class="td-btn"><input type="submit" name="btn-enviar" class="btn-form-cadastro" id="btn-enviar" value="Cadastrar" /></td>
+    <td class="td-btn"><input required type="submit" name="btn-enviar" class="btn-form-cadastro" id="btn-enviar" value="Cadastrar" /></td>
 </tr>
     </table>
 </form>

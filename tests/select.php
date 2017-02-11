@@ -9,7 +9,8 @@
 require_once "../models/Crud.php";
 require_once "../models/select.php";
 
-Crud::select(Select::sinodos());
+\Models\Crud::select(\Models\select::sinodos());
+
 
 ?>
 <html>
