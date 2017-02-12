@@ -6,6 +6,10 @@
  * Time: 13:11
  */
 require_once "Connect.php";
+require_once "Delete.php";
+require_once "Insert.php";
+require_once "Select.php";
+require_once "Update.php";
 
 class Crud
 {

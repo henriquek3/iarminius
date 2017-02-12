@@ -32,30 +32,30 @@ a:active {
 	}
 .h2-form-cadastro{
 	font-family:Tahoma, Geneva, sans-serif;
-	text-transform:uppercase;
+	
 	text-align:center;
 	}
 .h1-form-titulo{
 	font-family:Tahoma, Geneva, sans-serif;
-	text-transform:uppercase;
+	
 	text-align:center;
     font-size: 14px;
     text-align: left;
 	}
 .h2-form-titulo{
 	font-family:Tahoma, Geneva, sans-serif;
-	text-transform:uppercase;
+	
     font-size: 11px;
     text-align: center;
 	}
 .p-form-cadsastro{
 	font:Tahoma, Geneva, sans-serif;
-	text-transform:uppercase;
+	
 	}
 .p-header{
     font-family: tahoma;
     font-size: 14px;
-    text-transform: uppercase;
+    
 }
 .input-form-cadastro{
 	width:420px;
@@ -64,7 +64,7 @@ a:active {
 	border:none;
     border-bottom: 1px dotted;
 	font-family:Tahoma, Geneva, sans-serif;
-	text-transform:uppercase;
+	
 	font-size:13px;
 	padding:5px;
 	}
@@ -81,7 +81,7 @@ a:active {
 	border:none;
     border-bottom: 1px dotted;
 	font-family:Tahoma, Geneva, sans-serif;
-	text-transform:uppercase;
+	
 	font-size:16px;
 	padding:5px;
     margin: 0 auto;
@@ -93,7 +93,7 @@ a:active {
 	border:none;
     border-bottom: 1px dotted;
 	font-family:Tahoma, Geneva, sans-serif;
-	text-transform:uppercase;
+	
 	font-size:13px;
 	padding:5px;
 }
@@ -111,7 +111,7 @@ a:active {
 	border:none;
     border-bottom: 1px dotted;
 	font-family:Tahoma, Geneva, sans-serif;
-	text-transform:uppercase;
+	
 	font-size:13px;
 	padding:5px;
     float: right;
@@ -131,7 +131,7 @@ a:active {
 	border:none;
     border-bottom: 1px dotted;
 	font-family:Tahoma, Geneva, sans-serif;
-	text-transform:uppercase;
+	
 	font-size:13px;
 	padding:5px;
     float: right;
@@ -155,7 +155,7 @@ a:active {
 	background-color:#FC0;
 	border: 1px;
 	font-family:Tahoma, Geneva, sans-serif;
-	text-transform:uppercase;
+	
 	font-weight:bold;
 	text-align:center;
 	margin-top:20px;
@@ -170,7 +170,7 @@ a:active {
 	border:none;
     border-bottom: 1px dotted;
 	font-family:Tahoma, Geneva, sans-serif;
-	text-transform:uppercase;
+	
 	font-size:12px;
 	padding:5px;
 	}
@@ -180,21 +180,21 @@ select{
     border-bottom: 1px dotted;
 }
 .tr-texto{
-    text-transform: uppercase;
+    
     font-size: 10px;
     font-family: tahoma;
     text-align: left;
     vertical-align: bottom;
 }
 .tr-texto-i{
-    text-transform: uppercase;
+    
     font-size: 10px;
     font-family: tahoma;
     text-align: left;
     vertical-align: bottom;
 }
 .tr-texto-ii{
-    text-transform: uppercase;
+    
     font-size: 10px;
     font-family: tahoma;
     text-align: left;
@@ -234,7 +234,7 @@ select{
     width: 95%;
     text-align: center;
     font-family: tahoma;
-    text-transform: uppercase;
+    
     font-weight: bold;
 }
 .menu ul li{

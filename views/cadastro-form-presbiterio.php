@@ -1,5 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<?php
+require_once "../models/Crud.php";
+?>
+<!DOCTYPE html>
+<html lang="pt">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>iArminius</title>
@@ -23,7 +26,12 @@
       <td><p class="p-form-cadsastro">sínodo</p></td>
       <td><label for="sinodo"></label>
         <select name="sinodo" id="sinodo" class="select-sinodo">
-          <option value="0">Selecione o Sínodo</option>
+            <?php
+                foreach (Crud::select(Select::sinodos()) as $key){
+                    echo "<option value=\"{$key['id']}\">{$key['nome']}</option>";
+                }
+            ?>
+          <!--<option value="0">Selecione o Sínodo</option> -->
       </select></td>
       <td><p class="p-form-cadsastro">Nome</p></td>
       <td><label for="nome"></label>

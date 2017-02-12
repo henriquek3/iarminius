@@ -1,9 +1,10 @@
-<html>
+<?php
+require_once "../models/Crud.php";
+?>
+<!DOCTYPE html>
+<html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>iArminius</title>
 <link href="estilo.css" rel="stylesheet" />
 </head>
@@ -19,12 +20,29 @@
   </tr>
   <tr>
     <td colspan="2" class="p-header">sinodo</td>
-    <td colspan="3"></td>
+    <td colspan="3"><label for="idSinodo"></label>
+          <select name="idSinodo" id="idSinodo">
+             <?php
+                foreach (Crud::select(Select::sinodos()) as $key){
+                    echo "<option value=\"{$key['id']}\">{$key['nome']}</option>";
+                }
+            ?>
+          <!--<option value="0">Selecione o Sínodo</option> -->
+        </select>
+          <label for="idPresbiterio"></label>
+
     <td class="p-header" colspan="2" rowspan="3">siglas </td>
   </tr>
   <tr>
     <td colspan="2" class="p-header">presbitério</td>
-    <td colspan="3"></td>
+    <td colspan="3"><select name="idPresbiterio" id="idPresbiterio">
+           <?php
+                foreach (Crud::select(Select::presbiterios()) as $key){
+                    echo "<option value=\"{$key['id']}\">{$key['nome']}</option>";
+                }
+            ?>
+          <!--<option value="0">Selecione o Presbitério</option> -->
+        </select></td>
   </tr>
   <tr>
     <td colspan="5" class="p-header">ano </td>

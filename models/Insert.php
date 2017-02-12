@@ -14,9 +14,9 @@ class Insert
         return $sql;
     }
 
-    public static function presbiterios($nome,$sigla)
+    public static function presbiterios($idSinodo,$nome,$sigla)
     {
-        $sql = "INSERT INTO presbiterios (nome,sigla) VALUES ('$nome','$sigla')";
+        $sql = "INSERT INTO presbiterios (id_sinodo,nome,sigla) VALUES ('$idSinodo','$nome','$sigla')";
         return $sql;
     }
 }
