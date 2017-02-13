@@ -20,16 +20,12 @@ class Insert
         return $sql;
     }
 
-    public static function igrejas($idPresbiterio,$idCidade,$nome,$cnpj,$cep,$endereco,$enderecoComplemento,$enderecoNumero,$enderecoBairro,
-$cxPostal,$email,$fax,$telefone,$nroOrdem,$homepage,$dataOrganizacao)
+    public static function igrejas($idPresbiterio,$idCidade,$nome,$cnpj,$cep,
+                                   $endereco,$enderecoComplemento,$enderecoNumero,
+                                   $enderecoBairro,$cxPostal,$email,$fax,$telefone,$nroOrdem,$homepage,$dataOrganizacao)
     {
-        $sql = "INSERT INTO igrejas (id_presbiterio, id_cidade, nome, cnpj, cep, endereco, endereco_complemento, endereco_numero, endereco_bairro,
-                     cxpostal, email, fax, telefone, nro_ordem, homepage, data_organizacao)
-                VALUES ('$idPresbiterio', '$idCidade', '$nome', $cnpj,
-                 $cep, '$endereco', '$enderecoComplemento', 
-                 $enderecoNumero,
-                          '$enderecoBairro',$cxPostal, '$email', $fax, $telefone, 
-                          $nroOrdem, '$homepage', '$dataOrganizacao')";
+        $sql = "INSERT INTO igrejas (id_presbiterio, id_cidade, nome, cnpj, cep, endereco, endereco_complemento, endereco_numero, endereco_bairro,cxpostal,email, fax, telefone, nro_ordem, homepage, data_organizacao)
+                VALUES ($idPresbiterio, $idCidade, '$nome', $cnpj,$cep,'$endereco', '$enderecoComplemento',$enderecoNumero,'$enderecoBairro',$cxPostal, '$email', $fax, $telefone,$nroOrdem, '$homepage', '$dataOrganizacao')";
         return $sql;
     }
 }
