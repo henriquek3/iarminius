@@ -11,7 +11,7 @@ class Select
 {
     public static function sinodos()
     {
-        $sql = "SELECT id_sinodo AS id,nome,sigla FROM sinodos";
+        $sql = "SELECT id_sinodo AS id,nome,sigla FROM sinodos ORDER BY id";
         return $sql;
     }
 
@@ -40,6 +40,29 @@ class Select
     public static function presbiteriosIdSinodos($id)
     {
         $sql = "SELECT * FROM presbiterios WHERE id_sinodo = $id";
+        return $sql;
+    }
+
+    public static function igrejas()
+    {
+        $sql = "SELECT * FROM igrejas";
+        return $sql;
+    }
+
+    public static function presbiteros()
+    {
+        $sql = "SELECT * FROM presbiteros";
+        return $sql;
+    }
+
+    public static function presbiteriosGrid()
+    {
+        $sql = "SELECT        id_presbiterio      AS id,
+                              sinodos.nome        AS sinodos,
+                              presbiterios.nome   AS presbiterios,
+                              presbiterios.sigla  AS sigla
+                FROM          presbiterios, sinodos
+                WHERE         presbiterios.id_sinodo = sinodos.id_sinodo";
         return $sql;
     }
 }

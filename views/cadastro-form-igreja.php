@@ -7,7 +7,9 @@ require_once "../models/Crud.php";
     <meta http-equiv="Content-Type" content="text/html"
      charset="utf-8" />
     <title>iArminius</title>
-    <link href="estilo.css" rel="stylesheet"/>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
+    <link href="estilo.css" rel="stylesheet" />
+    
     <style type="text/css">
         .carregando {
             color: #ff0000;
@@ -19,12 +21,13 @@ require_once "../models/Crud.php";
             display: none;
         }
     </style>
-</head>
+    
+    </head>
 
 
 <body>
-<div id="table-form" class="table-form">
     <?php include("menu.php") ?>
+<div id="table-form" class="table-form">
     <form id="form1" name="form1" method="post" action="../controllers/igreja.php">
 
 
@@ -95,7 +98,7 @@ require_once "../models/Crud.php";
                 <td>cidade</td>
                 <td>
                     <span class="carregando">Aguarde, carregando...</span>
-                    <select class="form-control" id="cidades" name="cidades" required="required">
+                    <select class="form-control" id="idCidade" name="idCidade" required="required">
                         <option value="">- selecione -</option>
                     </select>
                 </td>
@@ -136,7 +139,33 @@ require_once "../models/Crud.php";
         </table>
     </form>
 </div>
-<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <section class="container">
+    <div class="col-xs-6"></div>
+    <div class="col-xs-6 tb-cadastrados">
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Igrejas Cadastradas</th>
+            </tr>
+            </thead>
+            <tbody>
+           <?php
+            foreach ( Crud::select(Select::igrejas()) as $gridGrupo ){
+                echo '<tr>';
+                echo '<th scope="row">'.$gridGrupo['id_igreja'].'</th>';
+                echo '<td>'.$gridGrupo['nome'].'</td>';
+                echo '<td>'.' '.'</td>';
+              
+            }
+            ?>
+
+            </tbody>
+        </table>
+    </div>
+
+</section>
+      <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 <script type="text/javascript">
     google.load("jquery", "1.4.2");
 </script>
@@ -144,7 +173,7 @@ require_once "../models/Crud.php";
     $(function () {
         $('#estados').change(function () {
             if ($(this).val()) {
-                $('#cidades').hide();
+                $('#idCidade').hide();
                 $('.carregando').show();
                 $.getJSON('../controllers/request_cidades.php?search=', {
                     id_estado: $(this).val(),
@@ -154,11 +183,11 @@ require_once "../models/Crud.php";
                     for (var i = 0; i < j.length; i++) {
                         options += '<option value="' + j[i].id + '">' + j[i].nome + '</option>';
                     }
-                    $('#cidades').html(options).show();
+                    $('#idCidade').html(options).show();
                     $('.carregando').hide();
                 });
             } else {
-                $('#cidades').html('<option value="">– Escolha –</option>');
+                $('#idCidade').html('<option value="">– Escolha –</option>');
             }
         });
     });
@@ -186,5 +215,13 @@ require_once "../models/Crud.php";
         });
     });
 </script>
-</body>
+    
+ <!-- jQuery first, then Tether, then Bootstrap JS. -->
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+  
+    
+    </body>
 </html>

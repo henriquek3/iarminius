@@ -1,5 +1,5 @@
 <?php
-require_once "../models/Crud.php";
+// require_once "../models/Crud.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -13,12 +13,17 @@ require_once "../models/Crud.php";
             color: #ff0000;
             display: none;
         }
+
+        .carregandoPresbiterios {
+            color: #ff0000;
+            display: none;
+        }
     </style>
 </head>
 <body>
 
-<div id="table-form" class="table-form">
     <?php include("menu.php") ?>
+<div id="table-form" class="table-form">
     <form id="form1" name="form1" method="post" action="../controllers/validar.php">
 
 
@@ -29,7 +34,29 @@ require_once "../models/Crud.php";
                 <td colspan="8"><h1 class="h1-form-titulo tr-titulo-h1"> cadastrar ministro</h1></td>
             </tr>
         </table>
-
+  <table width="95%" border="0" align="center">
+            <tr class="tr-texto-i">
+                <td>sínodo</td>
+                <td>
+                    <label for="idSinodo"></label>
+                    <select name="idSinodo" id="idSinodo">
+                        <option selected>- selecione -</option>
+                        <?php
+                        foreach (Crud::select(Select::sinodos()) as $key) {
+                            echo "<option value=\"{$key['id']}\">{$key['nome']}</option>";
+                        }
+                        ?>
+                    </select>
+                    <label for="idPresbiterio"></label></td>
+                <td>presbitério</td>
+                <td>
+                    <span class="carregandoPresbiterios">Aguarde, carregando...</span>
+                    <select name="idPresbiterio" id="idPresbiterio">
+                        <option selected>- selecione -</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
         <table width="95%" border="0" align="center">
 
             <tr class="tr-texto-i">
@@ -74,7 +101,7 @@ require_once "../models/Crud.php";
                 <td>cidade</td>
                 <td>
                     <span class="carregando">Aguarde, carregando...</span>
-                    <select class="form-control" id="cidades" name="cidades" required="required">
+                    <select class="form-control" id="idCidade" name="idCidade" required="required">
                         <option value="">selecione</option>
                     </select>
 
@@ -114,12 +141,11 @@ require_once "../models/Crud.php";
 <script type="text/javascript">
     google.load("jquery", "1.4.2");
 </script>
-
 <script type="text/javascript">
     $(function () {
         $('#estados').change(function () {
             if ($(this).val()) {
-                $('#cidades').hide();
+                $('#idCidade').hide();
                 $('.carregando').show();
                 $.getJSON('../controllers/request_cidades.php?search=', {
                     id_estado: $(this).val(),
@@ -129,11 +155,34 @@ require_once "../models/Crud.php";
                     for (var i = 0; i < j.length; i++) {
                         options += '<option value="' + j[i].id + '">' + j[i].nome + '</option>';
                     }
-                    $('#cidades').html(options).show();
+                    $('#idCidade').html(options).show();
                     $('.carregando').hide();
                 });
             } else {
-                $('#cidades').html('<option value="">– Escolha –</option>');
+                $('#idCidade').html('<option value="">– Escolha –</option>');
+            }
+        });
+    });
+</script>
+<script type="text/javascript">
+    $(function () {
+        $('#idSinodo').change(function () {
+            if ($(this).val()) {
+                $('#idPresbiterio').hide();
+                $('.carregandoPresbiterios').show();
+                $.getJSON('../controllers/request_presbiterios.php?search=', {
+                    id_sinodo: $(this).val(),
+                    ajax: 'true'
+                }, function (j) {
+                    var options = '<option value="">- Escolha -</option>';
+                    for (var i = 0; i < j.length; i++) {
+                        options += '<option value="' + j[i].id + '">' + j[i].nome + '</option>';
+                    }
+                    $('#idPresbiterio').html(options).show();
+                    $('.carregandoPresbiterios').hide();
+                });
+            } else {
+                $('#idPresbiterio').html('<option value="">– Escolha –</option>');
             }
         });
     });

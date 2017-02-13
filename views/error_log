@@ -1,0 +1,122 @@
+[11-Feb-2017 00:46:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Crud' not found in /home/ipcacoal/iarminius.ipcacoal.org/views/teste.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/ipcacoal/iarminius.ipcacoal.org/views/teste.php on line 3
+[11-Feb-2017 00:49:26 UTC] PHP Fatal error:  Uncaught Error: Class 'Crud' not found in /home/ipcacoal/iarminius.ipcacoal.org/views/teste.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/ipcacoal/iarminius.ipcacoal.org/views/teste.php on line 3
+[11-Feb-2017 03:10:22 UTC] PHP Parse error:  syntax error, unexpected 'Crud' (T_STRING) in /home/ipcacoal/iarminius.ipcacoal.org/views/teste.php on line 4
+[11-Feb-2017 13:37:19 UTC] PHP Parse error:  syntax error, unexpected 'Crud' (T_STRING) in /home/ipcacoal/iarminius.ipcacoal.org/views/teste.php on line 4
+[11-Feb-2017 14:26:22 UTC] PHP Parse error:  syntax error, unexpected 'Crud' (T_STRING) in /home/ipcacoal/iarminius.ipcacoal.org/views/teste.php on line 4
+[11-Feb-2017 20:16:15 UTC] PHP Parse error:  syntax error, unexpected 'Crud' (T_STRING) in /home/ipcacoal/iarminius.ipcacoal.org/views/teste.php on line 4
+[11-Feb-2017 21:11:28 UTC] PHP Fatal error:  Uncaught Error: Class 'Crud' not found in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-presbiterio.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-presbiterio.php on line 27
+[11-Feb-2017 21:14:53 UTC] PHP Notice:  Undefined index: id_sinodo in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-presbiterio.php on line 31
+[11-Feb-2017 21:14:53 UTC] PHP Stack trace:
+[11-Feb-2017 21:14:53 UTC] PHP   1. {main}() /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-presbiterio.php:0
+[11-Feb-2017 21:14:53 UTC] PHP Notice:  Undefined index: id_sinodo in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-presbiterio.php on line 31
+[11-Feb-2017 21:14:53 UTC] PHP Stack trace:
+[11-Feb-2017 21:14:53 UTC] PHP   1. {main}() /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-presbiterio.php:0
+[12-Feb-2017 03:55:23 UTC] PHP Fatal error:  Uncaught Error: Class 'Crud' not found in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-igreja.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-igreja.php on line 31
+[12-Feb-2017 03:57:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Select::presbiterios() in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-igreja.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-igreja.php on line 42
+[12-Feb-2017 04:00:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Select::presbiterios() in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-igreja.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-igreja.php on line 42
+[12-Feb-2017 04:05:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Select::presbiterios() in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-igreja.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-igreja.php on line 42
+[12-Feb-2017 04:07:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Select::presbiterios() in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-igreja.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-igreja.php on line 42
+[12-Feb-2017 04:09:52 UTC] PHP Parse error:  syntax error, unexpected 'as' (T_AS), expecting ',' or ')' in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-igreja.php on line 76
+[12-Feb-2017 04:11:53 UTC] PHP Fatal error:  Uncaught Error: Undefined class constant 'sinodos' in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-igreja.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-igreja.php on line 33
+[12-Feb-2017 04:14:22 UTC] PHP Fatal error:  Uncaught Error: Undefined class constant 'sinodos' in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-igreja.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-igreja.php on line 33
+[12-Feb-2017 04:16:23 UTC] PHP Fatal error:  Uncaught Error: Undefined class constant 'sinodo' in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-igreja.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-igreja.php on line 33
+[12-Feb-2017 04:18:25 UTC] PHP Fatal error:  Uncaught Error: Undefined class constant 'sinodos' in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-igreja.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-igreja.php on line 33
+[12-Feb-2017 04:26:17 UTC] PHP Fatal error:  Uncaught Error: Undefined class constant 'presbiterios' in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-igreja.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-igreja.php on line 42
+[12-Feb-2017 04:29:05 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Select::presbiterios() in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-igreja.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-igreja.php on line 42
+[12-Feb-2017 04:31:49 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Select::presbiterios() in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-igreja.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-igreja.php on line 42
+[12-Feb-2017 04:34:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Select::presbiterios() in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-igreja.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-igreja.php on line 42
+[12-Feb-2017 04:38:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Select::presbiterios() in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-igreja.php:43
+Stack trace:
+#0 {main}
+  thrown in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-igreja.php on line 43
+[12-Feb-2017 04:41:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Select::presbiterios() in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-igreja.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-igreja.php on line 42
+[12-Feb-2017 04:43:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Select::presbiterios() in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-igreja.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-igreja.php on line 42
+[12-Feb-2017 04:46:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Select::presbiterios() in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-igreja.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-igreja.php on line 42
+[12-Feb-2017 04:47:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Select::presbiterios() in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-igreja.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-igreja.php on line 42
+[12-Feb-2017 04:47:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Select::presbiterios() in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-igreja.php:42
+Stack trace:
+#0 {main}
+  thrown in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-igreja.php on line 42
+[12-Feb-2017 05:07:02 UTC] PHP Fatal error:  Uncaught Error: Class 'Crud' not found in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-relatorio.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-relatorio.php on line 25
+[12-Feb-2017 20:25:10 UTC] PHP Parse error:  syntax error, unexpected ''<td align="right"> ?>' (T_ENCAPSED_AND_WHITESPACE) in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-sinodo.php on line 47
+[12-Feb-2017 20:27:49 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-sinodo.php on line 51
+[12-Feb-2017 20:29:51 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-sinodo.php on line 51
+[12-Feb-2017 20:41:19 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-sinodo.php on line 51
+[12-Feb-2017 21:12:11 UTC] PHP Notice:  Undefined index: id in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-igreja.php on line 206
+[12-Feb-2017 21:12:11 UTC] PHP Stack trace:
+[12-Feb-2017 21:12:11 UTC] PHP   1. {main}() /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-igreja.php:0
+[13-Feb-2017 06:25:12 UTC] PHP Fatal error:  Uncaught Error: Class 'Crud' not found in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-ministro.php:45
+Stack trace:
+#0 {main}
+  thrown in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-ministro.php on line 45
+[13-Feb-2017 06:27:28 UTC] PHP Fatal error:  Uncaught Error: Class 'Crud' not found in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-ministro.php:45
+Stack trace:
+#0 {main}
+  thrown in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-ministro.php on line 45
+[13-Feb-2017 13:55:43 UTC] PHP Fatal error:  Uncaught Error: Class 'Crud' not found in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-ministro.php:45
+Stack trace:
+#0 {main}
+  thrown in /home/ipcacoal/iarminius.ipcacoal.org/views/cadastro-form-ministro.php on line 45

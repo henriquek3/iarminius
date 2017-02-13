@@ -1,40 +1,38 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>iArminius</title>
-<link href="estilo.css" rel="stylesheet" />
+  <title>iStatic - webMinster</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-
 <body>
-<div id="table-form" class="table-form">
-    <?php include("menu.php") ?>
-<form id="form1" name="form1" method="post" action="../controllers/sinodo.php">
-   <table width="95%" border="0" align="center">
-     <tr>
-    <td colspan="8"> <h1 class="h1-form-titulo tr-titulo-h1"> cadastrar sínodo</h1> </td> 
-    </tr>   
-    </table>
+
+<div class="tudo container">
+     <?php include("menu.php") ?>
+    <h2>Cadastrar Sínodo</h2>
+    <form class="form-horizontal" method="post" action="../controllers/sinodo.php">
+        <div class="form-group">
+            <label for="nome" class="control-label col-xs-1">Nome:</label>
+            <div class="col-xs-9">
+            <input type="text" class="form-control" id="nome" name="nome">
+            </div>
+            <label for="sigla" class="control-label col-xs-1">Sigla:</label>
+            <div class="col-xs-1">
+            <input type="text" class="form-control" name="sigla" id="sigla" maxlength="3">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-xs-offset-5 col-xs-10">
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+            </div>
+        </div>
+    </form>
     
-    <table width="600" border="0" align="center">
-   
-    <tr class="tr-texto">
-      <td><p class="p-form-cadsastro">Nome</p></td>
-      <td><label for="nome"></label>
-      <input type="text" required name="nome" id="nome" class="input-form-cadastro"/></td>
-      <td><p class="p-form-cadsastro">sigla</p></td>
-      <td><label for="sigla"></label>
-      <input type="text" name="sigla" required id="sigla" class="input-form-cadastro-sigla" maxlength="3"/></td>
-      
-    </tr>
-   
-    <tr>
-      <td colspan="4" align="center"><input type="submit" name="btn-enviar" class="btn-form-cadastro" id="btn-enviar" value="Cadastrar" /></td>
-    </tr>
-  </table>
-</form>
 </div>
-<h2>&nbsp;</h2>
 
 </body>
 </html>

@@ -1,0 +1,51 @@
+[10-Feb-2017 23:50:44 UTC] PHP Warning:  PDO::prepare(): SQLSTATE[00000]: No error: PDO constructor was not called in /home/ipcacoal/iarminius.ipcacoal.org/models/Crud.php on line 22
+[10-Feb-2017 23:50:44 UTC] PHP Stack trace:
+[10-Feb-2017 23:50:44 UTC] PHP   1. {main}() /home/ipcacoal/iarminius.ipcacoal.org/controllers/sinodo.php:0
+[10-Feb-2017 23:50:44 UTC] PHP   2. Crud::insert() /home/ipcacoal/iarminius.ipcacoal.org/controllers/sinodo.php:18
+[10-Feb-2017 23:50:44 UTC] PHP   3. PDO->prepare() /home/ipcacoal/iarminius.ipcacoal.org/models/Crud.php:22
+[10-Feb-2017 23:50:44 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/ipcacoal/iarminius.ipcacoal.org/models/Crud.php:23
+Stack trace:
+#0 /home/ipcacoal/iarminius.ipcacoal.org/controllers/sinodo.php(18): Crud::insert('INSERT INTO sin...')
+#1 {main}
+  thrown in /home/ipcacoal/iarminius.ipcacoal.org/models/Crud.php on line 23
+[10-Feb-2017 23:50:44 UTC] PHP Warning:  PDO::prepare(): SQLSTATE[00000]: No error: PDO constructor was not called in /home/ipcacoal/iarminius.ipcacoal.org/models/Crud.php on line 22
+[10-Feb-2017 23:50:44 UTC] PHP Stack trace:
+[10-Feb-2017 23:50:44 UTC] PHP   1. {main}() /home/ipcacoal/iarminius.ipcacoal.org/controllers/sinodo.php:0
+[10-Feb-2017 23:50:44 UTC] PHP   2. Crud::insert() /home/ipcacoal/iarminius.ipcacoal.org/controllers/sinodo.php:18
+[10-Feb-2017 23:50:44 UTC] PHP   3. PDO->prepare() /home/ipcacoal/iarminius.ipcacoal.org/models/Crud.php:22
+[10-Feb-2017 23:50:44 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/ipcacoal/iarminius.ipcacoal.org/models/Crud.php:23
+Stack trace:
+#0 /home/ipcacoal/iarminius.ipcacoal.org/controllers/sinodo.php(18): Crud::insert('INSERT INTO sin...')
+#1 {main}
+  thrown in /home/ipcacoal/iarminius.ipcacoal.org/models/Crud.php on line 23
+[11-Feb-2017 22:12:27 UTC] PHP Fatal error:  Uncaught Error: Class 'Crud' not found in /home/ipcacoal/iarminius.ipcacoal.org/controllers/presbiterio.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/ipcacoal/iarminius.ipcacoal.org/controllers/presbiterio.php on line 19
+[12-Feb-2017 03:24:17 UTC] PHP Notice:  Undefined index: idPresbiterio in /home/ipcacoal/iarminius.ipcacoal.org/controllers/igreja.php on line 10
+[12-Feb-2017 03:24:17 UTC] PHP Stack trace:
+[12-Feb-2017 03:24:17 UTC] PHP   1. {main}() /home/ipcacoal/iarminius.ipcacoal.org/controllers/igreja.php:0
+[12-Feb-2017 03:24:17 UTC] PHP Notice:  Undefined index: cxPostal in /home/ipcacoal/iarminius.ipcacoal.org/controllers/igreja.php on line 19
+[12-Feb-2017 03:24:17 UTC] PHP Stack trace:
+[12-Feb-2017 03:24:17 UTC] PHP   1. {main}() /home/ipcacoal/iarminius.ipcacoal.org/controllers/igreja.php:0
+[12-Feb-2017 03:30:36 UTC] PHP Notice:  Undefined index: idPresbiterio in /home/ipcacoal/iarminius.ipcacoal.org/controllers/igreja.php on line 10
+[12-Feb-2017 03:30:36 UTC] PHP Stack trace:
+[12-Feb-2017 03:30:36 UTC] PHP   1. {main}() /home/ipcacoal/iarminius.ipcacoal.org/controllers/igreja.php:0
+[12-Feb-2017 03:30:36 UTC] PHP Notice:  Undefined index: cxPostal in /home/ipcacoal/iarminius.ipcacoal.org/controllers/igreja.php on line 19
+[12-Feb-2017 03:30:36 UTC] PHP Stack trace:
+[12-Feb-2017 03:30:36 UTC] PHP   1. {main}() /home/ipcacoal/iarminius.ipcacoal.org/controllers/igreja.php:0
+[12-Feb-2017 03:31:03 UTC] PHP Notice:  Undefined index: idPresbiterio in /home/ipcacoal/iarminius.ipcacoal.org/controllers/igreja.php on line 10
+[12-Feb-2017 03:31:03 UTC] PHP Stack trace:
+[12-Feb-2017 03:31:03 UTC] PHP   1. {main}() /home/ipcacoal/iarminius.ipcacoal.org/controllers/igreja.php:0
+[12-Feb-2017 03:31:03 UTC] PHP Notice:  Undefined index: cxPostal in /home/ipcacoal/iarminius.ipcacoal.org/controllers/igreja.php on line 19
+[12-Feb-2017 03:31:03 UTC] PHP Stack trace:
+[12-Feb-2017 03:31:03 UTC] PHP   1. {main}() /home/ipcacoal/iarminius.ipcacoal.org/controllers/igreja.php:0
+[12-Feb-2017 03:33:32 UTC] PHP Notice:  Undefined index: idPresbiterio in /home/ipcacoal/iarminius.ipcacoal.org/controllers/igreja.php on line 10
+[12-Feb-2017 03:33:32 UTC] PHP Stack trace:
+[12-Feb-2017 03:33:32 UTC] PHP   1. {main}() /home/ipcacoal/iarminius.ipcacoal.org/controllers/igreja.php:0
+[12-Feb-2017 03:34:06 UTC] PHP Notice:  Undefined index: idPresbiterio in /home/ipcacoal/iarminius.ipcacoal.org/controllers/igreja.php on line 10
+[12-Feb-2017 03:34:06 UTC] PHP Stack trace:
+[12-Feb-2017 03:34:06 UTC] PHP   1. {main}() /home/ipcacoal/iarminius.ipcacoal.org/controllers/igreja.php:0
+[12-Feb-2017 03:41:15 UTC] PHP Notice:  Undefined index: idPresbiterio in /home/ipcacoal/iarminius.ipcacoal.org/controllers/igreja.php on line 10
+[12-Feb-2017 03:41:15 UTC] PHP Stack trace:
+[12-Feb-2017 03:41:15 UTC] PHP   1. {main}() /home/ipcacoal/iarminius.ipcacoal.org/controllers/igreja.php:0

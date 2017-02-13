@@ -10,8 +10,8 @@ require_once "../models/Crud.php";
 </head>
 
 <body>
-<div id="table-form" class="table-form">
     <?php include("menu.php") ?>
+<div id="table-form" class="table-form">
 <form id="form1" name="form1" method="post" action="">
   <table width="95%" border="0" align="center">
     <tr>
