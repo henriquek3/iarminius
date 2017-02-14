@@ -30,8 +30,7 @@ $dataOrganizacao = $_POST['dataOrganizacao'];
 Crud::insert(Insert::igrejas($idPresbiterio, $idCidade, $nome, $cnpj, $cep, $endereco, $enderecoComplemento, $enderecoNumero, $enderecoBairro, $cxPostal, $email, $fax, $telefone, $nroOrdem, $homepage, $dataOrganizacao));
 
 
-
-//var_dump($_POST);
+var_dump($_POST);
 
 echo "<hr/></br></br></br>";
 

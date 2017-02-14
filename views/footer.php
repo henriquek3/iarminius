@@ -1,4 +1,4 @@
-<nav class="menu-n navbar navbar-light bg-faded">
+<nav class="menu-n navbar fixed-bottom navbar-light bg-faded">
     <div class="container">
         <!-- Brand -->
         <a class="navbar-brand" href="../index.php"><img src="../views/home.jpg" border="0"></a>
@@ -17,7 +17,7 @@
                     <a class="cor dropdown-item" href="../views/cadastro-form-sinodo.php">Sínodo</a>
                     <a class="cor dropdown-item" href="../views/cadastro-form-presbiterio.php">Presbitério</a>
                     <a class="cor dropdown-item" href="../views/cadastro-form-igreja.php">Igreja</a>
-                    <a class="cor dropdown-item" href="../views/cadastro-form-ministro.php">Oficiais</a>
+                    <a class="cor dropdown-item" href="../views/cadastro-form-ministro.php">Pessoas</a>
                 </div>
 
             </li>

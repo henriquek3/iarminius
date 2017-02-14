@@ -43,6 +43,12 @@ class Select
         return $sql;
     }
 
+    public static function igrejasIdPresbiterios($id)
+    {
+        $sql = "SELECT * FROM igrejas WHERE id_presbiterio = $id";
+        return $sql;
+    }
+
     public static function igrejas()
     {
         $sql = "SELECT * FROM igrejas";

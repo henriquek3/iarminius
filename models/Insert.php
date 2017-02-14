@@ -28,4 +28,11 @@ class Insert
                 VALUES ($idPresbiterio, $idCidade, '$nome', $cnpj,$cep,'$endereco', '$enderecoComplemento',$enderecoNumero,'$enderecoBairro',$cxPostal, '$email', $fax, $telefone,$nroOrdem, '$homepage', '$dataOrganizacao')";
         return $sql;
     }
+
+    public static function presbiteros($idCidade, $igreja, $nome, $tipoPresbitero, $endereco, $enderecoBairro, $enderecoNumero, $enderecoComplemento, $telefone, $cep, $cxPostal, $email)
+    {
+        $sql = "INSERT INTO presbiteros (id_cidade,id_igreja,nome,tipo_presbitero,endereco,endereco_bairro,endereco_numero,endereco_complemento,telefone,cep,cxpostal,email)                                        
+                VALUES ($idCidade,$igreja,'$nome',$tipoPresbitero,'$endereco','$enderecoBairro',$enderecoNumero,'$enderecoComplemento',$telefone,$cep,$cxPostal,'$email')";
+        return $sql;
+    }
 }

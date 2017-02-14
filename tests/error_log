@@ -1,0 +1,24 @@
+[10-Feb-2017 18:10:18 UTC] PHP Fatal error:  Uncaught PDOException: could not find driver in /home/ipcacoal/iarminius.ipcacoal.org/models/Connect.php:30
+Stack trace:
+#0 /home/ipcacoal/iarminius.ipcacoal.org/models/Connect.php(30): PDO->__construct('pgsql:dbname=ip...', 'ipcacoal_ad', 'iarminius')
+#1 /home/ipcacoal/iarminius.ipcacoal.org/models/Crud.php(15): Models\Connect->__construct()
+#2 /home/ipcacoal/iarminius.ipcacoal.org/tests/select.php(12): Models\Crud::select('SELECT nome,sig...')
+#3 {main}
+  thrown in /home/ipcacoal/iarminius.ipcacoal.org/models/Connect.php on line 30
+[10-Feb-2017 18:16:57 UTC] PHP Fatal error:  Uncaught Error: Class 'Models\PDO' not found in /home/ipcacoal/iarminius.ipcacoal.org/models/Crud.php:18
+Stack trace:
+#0 /home/ipcacoal/iarminius.ipcacoal.org/tests/select.php(12): Models\Crud::select('SELECT nome,sig...')
+#1 {main}
+  thrown in /home/ipcacoal/iarminius.ipcacoal.org/models/Crud.php on line 18
+[14-Feb-2017 01:56:17 UTC] PHP Warning:  require_once(../models/select.php): failed to open stream: No such file or directory in /home/ipcacoal/iarminius.ipcacoal.org/tests/select.php on line 10
+[14-Feb-2017 01:56:17 UTC] PHP Stack trace:
+[14-Feb-2017 01:56:17 UTC] PHP   1. {main}() /home/ipcacoal/iarminius.ipcacoal.org/tests/select.php:0
+[14-Feb-2017 01:56:17 UTC] PHP Fatal error:  require_once(): Failed opening required '../models/select.php' (include_path='.:/opt/alt/php70/usr/share/pear') in /home/ipcacoal/iarminius.ipcacoal.org/tests/select.php on line 10
+[14-Feb-2017 01:56:17 UTC] PHP Stack trace:
+[14-Feb-2017 01:56:17 UTC] PHP   1. {main}() /home/ipcacoal/iarminius.ipcacoal.org/tests/select.php:0
+[14-Feb-2017 01:58:38 UTC] PHP Warning:  require_once(../models/select.php): failed to open stream: No such file or directory in /home/ipcacoal/iarminius.ipcacoal.org/tests/select.php on line 10
+[14-Feb-2017 01:58:38 UTC] PHP Stack trace:
+[14-Feb-2017 01:58:38 UTC] PHP   1. {main}() /home/ipcacoal/iarminius.ipcacoal.org/tests/select.php:0
+[14-Feb-2017 01:58:38 UTC] PHP Fatal error:  require_once(): Failed opening required '../models/select.php' (include_path='.:/opt/alt/php70/usr/share/pear') in /home/ipcacoal/iarminius.ipcacoal.org/tests/select.php on line 10
+[14-Feb-2017 01:58:38 UTC] PHP Stack trace:
+[14-Feb-2017 01:58:38 UTC] PHP   1. {main}() /home/ipcacoal/iarminius.ipcacoal.org/tests/select.php:0
