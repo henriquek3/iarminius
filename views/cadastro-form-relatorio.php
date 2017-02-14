@@ -7,7 +7,7 @@ require_once "../models/Crud.php";
     <title>iStatic - webMinster</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="http://iarminius.ipcacoal.org/views/vendor/bootstrap/4.0.0-alpha.5-dist/css/bootstrap.css"
+    <link href="vendor/bootstrap/4.0.0-alpha.5-dist/css/bootstrap.css"
           rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style type="text/css">
@@ -15,7 +15,6 @@ require_once "../models/Crud.php";
             color: #ff0000;
             display: none;
         }
-
         .carregandoPresbiterios {
             color: #ff0000;
             display: none;
@@ -33,28 +32,21 @@ require_once "../models/Crud.php";
 
         <div class="col-md-12"><h3 class="h2-titulo text-xs-center text-uppercase">Informações Cadastrais e Estatísticas
                 de Comunidade Presbiteriana</h3></div>
-
         <form class="form-horizontal" method="post" action="../controllers/relatorio.php">
-
             <!-- SELECIONAR SINODO E PRESBITÉRIO -->
-
             <div class="row-txt form-group row">
-                <label for="idSinodo" class="col-md-1">Sínodo</label>
+                <label for="idSinodo" class="col-md-1 col-form-label">Sínodo</label>
                 <div class="col-md-3">
                     <select name="idSinodo" id="idSinodo" class="input-txt form-control">
-
                         <option selected>- selecione -</option>
                         <?php
                         foreach (Crud::select(Select::sinodos()) as $key) {
                             echo "<option value=\"{$key['id']}\">{$key['nome']}</option>";
                         }
-                        ?>
-
-                        <!-- CÓDIGO SINODO -->
+                        ?><!-- CÓDIGO SINODO -->
                     </select>
                 </div>
-
-                <label for="idPresbiterio" class="col-md-1">Presbitério</label>
+                <label for="idPresbiterio" class="col-md-1 col-form-label">Presbitério</label>
                 <div class="col-md-4">
                     <span class="carregandoPresbiterios">Aguarde, carregando...</span>
                     <select name="idPresbiterio" id="idPresbiterio" class="input-txt form-control">
@@ -62,25 +54,20 @@ require_once "../models/Crud.php";
                         <!-- CÓDIGO SINODO -->
                     </select>
                 </div>
-                <div class="row-txt form-group row">
+                <div class="">
                     <div class="col-md-3"></div>
-                    <label for="ano" class="col-md-1">Ano Ref.</label>
+                    <label for="ano" class="col-md-1 col-form-label">Ano Ref.</label>
                     <div class="col-md-2">
-                        <input type="number_format" required name="ano" id="ano" class="form-control">
+                        <input type="number" required name="ano" id="ano" class="form-control">
                     </div>
                     <div class="col-md-3"></div>
                 </div>
             </div>
-
             <!---------------------------------------------------->
-
-
             <!-- I - IDENTIFICAÇÃO DA IGREJA / CONGREGAÇÃO PRESBITERIAL -->
             <div class="col-md-12"><h3 class="h2-titulo text-xs-center text-uppercase">I - iDENTIFICAÇÃO DA IGREJA /
                     congregação presbiterial</h3></div>
-
             <!-- NOME -->
-
             <div class="row-txt form-group row">
                 <label for="nome" class="col-md-1 col-form-label">Nome</label>
                 <div class="col-md-11">
@@ -95,14 +82,9 @@ require_once "../models/Crud.php";
                         <!-- CÓDIGO SINODO -->
                     </select>
                 </div>
-
-
             </div>
-
             <!---------------------------------------------------->
-
             <!-- ENDEREÇO, NÚMERO, COMPLEMENTO E BAIRRO-->
-
             <div class="row-txt form-group row">
                 <label for="endereco" class="col-md-1 col-form-label">Endereço</label>
                 <div class="col-md-3">
@@ -110,7 +92,7 @@ require_once "../models/Crud.php";
                 </div>
                 <label for="enderecoNumero" class="col-md-1 col-form-label">Número</label>
                 <div class="col-md-1">
-                    <input type="number_format" disabled required name="enderecoNumero" id="enderecoNumero"
+                    <input type="number" disabled required name="enderecoNumero" id="enderecoNumero"
                            class="input-txt form-control" pattern="[0-9]+$">
                 </div>
                 <label class="col-md-1 col-form-label" for="enderecoComplemento">Complemento</label>
@@ -123,15 +105,10 @@ require_once "../models/Crud.php";
                     <input type="text" disabled required name="enderecoBairro" id="enderecoBairro"
                            class="input-txt form-control">
                 </div>
-
             </div>
-
             <!---------------------------------------------------->
-
             <!-- ESTADO, CIDADE, CEP E CX. POSTAL -->
-
             <div class="row-txt form-group row">
-
                 <label for="estados" class="col-md-1 col-form-label">Estado</label>
                 <div class="col-md-2">
                     <input type="text" disabled required name="estados" id="estados" class="input-txt form-control">
@@ -139,16 +116,15 @@ require_once "../models/Crud.php";
                 <label for="idCidade" class="col-md-1 col-form-label">Cidade</label>
                 <div class="col-md-2">
                     <input type="text" disabled required name="idCidade" id="idCidade" class="input-txt form-control">
-
                 </div>
                 <label for="cep" class="col-md-1 col-form-label">CEP</label>
                 <div class="col-md-2">
-                    <input type="number_format" disabled required name="cep" id="cep" class="input-txt form-control"
+                    <input type="number" disabled required name="cep" id="cep" class="input-txt form-control"
                            pattern="[0-9]+$">
                 </div>
                 <label for="cxPostal" class="col-md-1 col-form-label">Cx. Postal</label>
                 <div class="col-md-2">
-                    <input type="number_format" disabled required name="cxPostal" id="cxPostal"
+                    <input type="number" disabled required name="cxPostal" id="cxPostal"
                            class="input-txt form-control" pattern="[0-9]+$">
                 </div>
 
@@ -162,12 +138,12 @@ require_once "../models/Crud.php";
 
                 <label for="telefone" class="col-md-1 col-form-label">Telefone</label>
                 <div class="col-md-2">
-                    <input type="number_format" disabled required name="telefone" id="telefone"
+                    <input type="number" disabled required name="telefone" id="telefone"
                            class="input-txt form-control" pattern="[0-9]+$">
                 </div>
                 <label for="fax" class="col-md-1 col-form-label">Fax</label>
                 <div class="col-md-2">
-                    <input type="number_format" disabled required name="fax" id="fax" class="input-txt form-control"
+                    <input type="number" disabled required name="fax" id="fax" class="input-txt form-control"
                            pattern="[0-9]+$">
                 </div>
                 <label for="email" class="col-md-1 col-form-label">E-mail</label>
@@ -190,12 +166,12 @@ require_once "../models/Crud.php";
                 </div>
                 <label for="cnpj" class="col-md-1 col-form-label text-md-right">CNPJ</label>
                 <div class="col-md-2">
-                    <input type="number_format" disabled required name="cnpj" id="cnpj" class="input-txt form-control"
+                    <input type="number" disabled required name="cnpj" id="cnpj" class="input-txt form-control"
                            pattern="[0-9]+$">
                 </div>
                 <label for="nroOrdem" class="col-md-1 col-form-label">N&deg; Ordem</label>
                 <div class="col-md-1">
-                    <input type="number_format" disabled required name="nroOrdem" id="nroOrdem"
+                    <input type="number" disabled required name="nroOrdem" id="nroOrdem"
                            class="input-txt form-control" pattern="[0-9]+$">
                 </div>
                 <label for="homepage" class="col-md-1 col-form-label text-md-right">WebSite</label>
@@ -210,13 +186,12 @@ require_once "../models/Crud.php";
 
             <div class="col-md-12"><h3 class="h2-titulo text-xs-center text-uppercase">II - INFORMAÇÕES DO TRABALHO</h3>
             </div>
-
             <div class="row-txt form-group row">
-
                 <label for="info-1" class="col-md-4 col-form-label">As informações prestadas abaixo se
                     relacionam:</label>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <select class="form-control">
+                        <option selected>- selecione -</option>
                         <option>SOMENTE À SEDE</option>
                         <option>SOMENTE À CONGREGAÇÃO</option>
                         <option>AMBOS</option>
@@ -248,18 +223,18 @@ require_once "../models/Crud.php";
 
                 <label for="pastores" class="col-md-1 col-form-label">Pastores</label>
                 <div class="col-md-1">
-                    <input type="number_format" required name="pastores" id="pastores" class="input-txt form-control">
+                    <input type="number" required name="pastores" id="pastores" class="input-txt form-control">
                 </div>
 
                 <label for="congregacoes" class="col-md-2 col-form-label">Congregações da Igreja</label>
                 <div class="col-md-1">
-                    <input type="number_format" required name="congregacoes" id="congregacoes"
+                    <input type="number" required name="congregacoes" id="congregacoes"
                            class="input-txt form-control">
                 </div>
 
                 <label for="educandarios" class="col-md-2 col-form-label">N&deg; de Educandários</label>
                 <div class="col-md-1">
-                    <input type="number_format" required name="educandarios" id="educandarios"
+                    <input type="number" required name="educandarios" id="educandarios"
                            class="input-txt form-control">
                 </div>
                 <label class="col-md-2 col-form-label text-md-center">N&deg; de Departamentos</label>
@@ -272,30 +247,30 @@ require_once "../models/Crud.php";
 
                 <label for="lecenciados" class="col-md-1 col-form-label">Licenciados</label>
                 <div class="col-md-1">
-                    <input type="number_format" required name="lecenciados" id="lecenciados"
+                    <input type="number" required name="lecenciados" id="lecenciados"
                            class="input-txt form-control">
                 </div>
 
                 <label for="pontosPregacao" class="col-md-2 col-form-label">Pontos de Pregação</label>
                 <div class="col-md-1">
-                    <input type="number_format" required name="pontosPregacao" id="pontosPregacao"
+                    <input type="number" required name="pontosPregacao" id="pontosPregacao"
                            class="input-txt form-control">
                 </div>
 
                 <label for="educandariosAlunos" class="col-md-2 col-form-label">total alunos - educand.</label>
                 <div class="col-md-1">
-                    <input type="number_format" required name="educandariosAlunos" id="educandariosAlunos"
+                    <input type="number" required name="educandariosAlunos" id="educandariosAlunos"
                            class="input-txt form-control">
                 </div>
 
                 <label for="upaDpto" class="col-md-1 col-form-label text-md-right">UPA</label>
                 <div class="col-md-1">
-                    <input type="number_format" required name="upaDpto" id="upaDpto" class="input-txt form-control">
+                    <input type="number" required name="upaDpto" id="upaDpto" class="input-txt form-control">
                 </div>
 
                 <label for="upaMembro" class="col-md-1 col-form-label text-md-right">UPA</label>
                 <div class="col-md-1">
-                    <input type="number_format" required name="upaMembro" id="upaMembro" class="input-txt form-control">
+                    <input type="number" required name="upaMembro" id="upaMembro" class="input-txt form-control">
                 </div>
             </div>
 
@@ -305,28 +280,28 @@ require_once "../models/Crud.php";
 
                 <label for="presbiteros" class="col-md-1 col-form-label">Presbíteros</label>
                 <div class="col-md-1">
-                    <input type="number_format" required name="presbiteros" id="presbiteros"
+                    <input type="number" required name="presbiteros" id="presbiteros"
                            class="input-txt form-control">
                 </div>
 
                 <label for="ebds" class="col-md-2 col-form-label">N&deg; Escolas Dominicais</label>
                 <div class="col-md-1">
-                    <input type="number_format" required name="ebds" id="ebds" class="input-txt form-control">
+                    <input type="number" required name="ebds" id="ebds" class="input-txt form-control">
                 </div>
 
                 <label for="creches" class="col-md-2 col-form-label">N&deg; Creches</label>
                 <div class="col-md-1">
-                    <input type="number_format" required name="creches" id="creches" class="input-txt form-control">
+                    <input type="number" required name="creches" id="creches" class="input-txt form-control">
                 </div>
 
                 <label for="umpDpto" class="col-md-1 col-form-label text-md-right">UMP</label>
                 <div class="col-md-1">
-                    <input type="number_format" required name="umpDpto" id="umpDpto" class="input-txt form-control">
+                    <input type="number" required name="umpDpto" id="umpDpto" class="input-txt form-control">
                 </div>
 
                 <label for="umpMembro" class="col-md-1 col-form-label text-md-right">UMP</label>
                 <div class="col-md-1">
-                    <input type="number_format" required name="umpMembro" id="umpMembro" class="input-txt form-control">
+                    <input type="number" required name="umpMembro" id="umpMembro" class="input-txt form-control">
                 </div>
             </div>
 
@@ -336,29 +311,29 @@ require_once "../models/Crud.php";
 
                 <label for="diaconos" class="col-md-1 col-form-label">Diáconos</label>
                 <div class="col-md-1">
-                    <input type="number_format" required name="diaconos" id="diaconos" class="input-txt form-control">
+                    <input type="number" required name="diaconos" id="diaconos" class="input-txt form-control">
                 </div>
 
                 <label for="ebdsProfessores" class="col-md-2 col-form-label">N&deg; Professores / E.B.D.</label>
                 <div class="col-md-1">
-                    <input type="number_format" required name="ebdsProfessores" id="ebdsProfessores"
+                    <input type="number" required name="ebdsProfessores" id="ebdsProfessores"
                            class="input-txt form-control">
                 </div>
 
                 <label for="crechesCriancas" class="col-md-2 col-form-label">N&deg; Total de Crianças</label>
                 <div class="col-md-1">
-                    <input type="number_format" required name="crechesCriancas" id="crechesCriancas"
+                    <input type="number" required name="crechesCriancas" id="crechesCriancas"
                            class="input-txt form-control">
                 </div>
 
                 <label for="safDpto" class="col-md-1 col-form-label text-md-right">SAF</label>
                 <div class="col-md-1">
-                    <input type="number_format" required name="safDpto" id="safDpto" class="input-txt form-control">
+                    <input type="number" required name="safDpto" id="safDpto" class="input-txt form-control">
                 </div>
 
                 <label for="safMembro" class="col-md-1 col-form-label text-md-right">SAF</label>
                 <div class="col-md-1">
-                    <input type="number_format" required name="safMembro" id="safMembro" class="input-txt form-control">
+                    <input type="number" required name="safMembro" id="safMembro" class="input-txt form-control">
                 </div>
             </div>
 
@@ -368,29 +343,29 @@ require_once "../models/Crud.php";
 
                 <label for="evangelistas" class="col-md-1 col-form-label">Evangelistas</label>
                 <div class="col-md-1">
-                    <input type="number_format" required name="evangelistas" id="evangelistas"
+                    <input type="number" required name="evangelistas" id="evangelistas"
                            class="input-txt form-control">
                 </div>
 
                 <label for="alunosEbdsAtual" class="col-md-2 col-form-label">Alunos/Ed - Ano Atual</label>
                 <div class="col-md-1">
-                    <input type="number_format" required name="alunosEbdsAtual" id="alunosEbdsAtual"
+                    <input type="number" required name="alunosEbdsAtual" id="alunosEbdsAtual"
                            class="input-txt form-control">
                 </div>
 
                 <label for="outros" class="col-md-2 col-form-label">N&deg; de Outros</label>
                 <div class="col-md-1">
-                    <input type="number_format" required name="outros" id="outros" class="input-txt form-control">
+                    <input type="number" required name="outros" id="outros" class="input-txt form-control">
                 </div>
 
                 <label for="uphDpto" class="col-md-1 col-form-label text-md-right">UPH</label>
                 <div class="col-md-1">
-                    <input type="number_format" required name="uphDpto" id="uphDpto" class="input-txt form-control">
+                    <input type="number" required name="uphDpto" id="uphDpto" class="input-txt form-control">
                 </div>
 
                 <label for="uphMembros" class="col-md-1 col-form-label text-md-right">UPH</label>
                 <div class="col-md-1">
-                    <input type="number_format" required name="uphMembros" id="uphMembros"
+                    <input type="number" required name="uphMembros" id="uphMembros"
                            class="input-txt form-control">
                 </div>
             </div>
@@ -401,29 +376,29 @@ require_once "../models/Crud.php";
 
                 <label for="missionarios" class="col-md-1 col-form-label">Missionários</label>
                 <div class="col-md-1">
-                    <input type="number_format" required name="missionarios" id="missionarios"
+                    <input type="number" required name="missionarios" id="missionarios"
                            class="input-txt form-control">
                 </div>
 
                 <label for="alunosEbdsAnterior" class="col-md-2 col-form-label">Alunos/Ed - Ano Ant.</label>
                 <div class="col-md-1">
-                    <input type="number_format" required name="alunosEbdsAnterior" id="alunosEbdsAnterior"
+                    <input type="number" required name="alunosEbdsAnterior" id="alunosEbdsAnterior"
                            class="input-txt form-control">
                 </div>
 
                 <label for="total" class="col-md-2 col-form-label">N&deg; Total</label>
                 <div class="col-md-1">
-                    <input type="number_format" required name="total" id="total" class="input-txt form-control">
+                    <input type="number" required name="total" id="total" class="input-txt form-control">
                 </div>
 
                 <label for="name" class="col-md-1 col-form-label text-md-right">Outras</label>
                 <div class="col-md-1">
-                    <input type="number_format" required name="name" id="name" class="input-txt form-control">
+                    <input type="number" required name="name" id="name" class="input-txt form-control">
                 </div>
 
                 <label for="name" class="col-md-1 col-form-label text-md-right"></label>
                 <div class="col-md-1">
-                    <input type="number_format" required name="name" id="name" class="input-txt form-control">
+                    <input type="number" required name="name" id="name" class="input-txt form-control">
                 </div>
             </div>
 
@@ -433,13 +408,13 @@ require_once "../models/Crud.php";
 
                 <label for="candidatos" class="col-md-1 col-form-label">Candidatos</label>
                 <div class="col-md-1">
-                    <input type="number_format" required name="candidatos" id="candidatos"
+                    <input type="number" required name="candidatos" id="candidatos"
                            class="input-txt form-control">
                 </div>
 
                 <label for="name" class="col-md-2 col-form-label">Variação Percentual</label>
                 <div class="col-md-1">
-                    <input type="number_format" required name="name" id="name" class="input-txt form-control">
+                    <input type="number" required name="name" id="name" class="input-txt form-control">
                 </div>
 
                 <label for="total" class="col-md-2 col-form-label"></label>
@@ -449,29 +424,24 @@ require_once "../models/Crud.php";
 
                 <label for="name" class="col-md-1 col-form-label text-md-right">Totais</label>
                 <div class="col-md-1">
-                    <input type="number_format" required name="name" id="name" class="input-txt form-control">
+                    <input type="number" required name="name" id="name" class="input-txt form-control">
                 </div>
 
                 <label for="name" class="col-md-1 col-form-label text-md-right"></label>
                 <div class="col-md-1">
-                    <input type="number_format" required name="name" id="name" class="input-txt form-control">
+                    <input type="number" required name="name" id="name" class="input-txt form-control">
                 </div>
             </div>
 
             <!-- VI - INFORMAÇÕES FINAIS -->
-
             <div class="col-md-12"><h3 class="h2-titulo text-xs-center text-uppercase">VI - INFORMAÇÕES FINAIS</h3>
             </div>
-
             <div class="row-txt form-group row">
-
                 <!-- NOME E E-MAIL -->
-
-                <div class="row-txt form-group row">
-                    <label for="nome" class="col-xs-1 col-form-label">Sec. do Conselho</label>
-                    <div class="col-xs-11">
+                <div class="form-group row">
+                    <label for="nome" class="col-xs-2 col-form-label">Secretário do Conselho</label>
+                    <div class="col-xs-10">
                         <select name="idPresbitero" id="idPresbitero" class="input-txt form-control">
-
                             <option selected>- selecione -</option>
                             <?php
                             foreach (Crud::select(Select::presbiteros()) as $key) {
@@ -481,14 +451,9 @@ require_once "../models/Crud.php";
                             <!-- CÓDIGO SINODO -->
                         </select>
                     </div>
-
-
                 </div>
-
                 <!---------------------------------------------------->
-
                 <!-- ENDEREÇO, NÚMERO E COMPLEMENTO -->
-
                 <div class="row-txt form-group row">
                     <label for="endereco" class="col-xs-1 col-form-label">Endereço</label>
                     <div class="col-xs-3">
@@ -496,7 +461,7 @@ require_once "../models/Crud.php";
                     </div>
                     <label for="enderecoNumero" class="col-xs-1 col-form-label">Número</label>
                     <div class="col-xs-1">
-                        <input type="number_format" disabled required name="enderecoNumero" id="enderecoNumero"
+                        <input type="number" disabled required name="enderecoNumero" id="enderecoNumero"
                                class="input-txt form-control" pattern="[0-9]+$">
                     </div>
                     <label class="col-xs-1 col-form-label" for="enderecoComplemento">Complemento</label>
@@ -529,50 +494,38 @@ require_once "../models/Crud.php";
                     </div>
                     <label for="cep" class="col-xs-1 col-form-label">CEP</label>
                     <div class="col-xs-2">
-                        <input type="number_format" disabled required name="cep" id="cep"
+                        <input type="number" disabled required name="cep" id="cep"
                                class="input-txt form-control">
                     </div>
                     <label for="cxPostal" class="col-xs-1 col-form-label">Cx. Postal</label>
                     <div class="col-xs-2">
-                        <input type="number_format" disabled required name="cxPostal" id="cxPostal"
+                        <input type="number" disabled required name="cxPostal" id="cxPostal"
                                class="input-txt form-control">
                     </div>
-
                 </div>
-
                 <!---------------------------------------------------->
-
                 <!-- CEP, TELEFONE, FAX E CX POSTAL -->
-
                 <div class="row-txt form-group row">
-
                     <label for="telefone" class="col-xs-1 col-form-label">Telefone</label>
                     <div class="col-xs-2">
-                        <input type="number_format" disabled required name="telefone" id="telefone"
+                        <input type="number" disabled required name="telefone" id="telefone"
                                class="input-txt form-control" pattern="[0-9]+$">
                     </div>
-
                     <label for="email" class="col-xs-1 col-form-label">E-mail</label>
                     <div class="col-xs-5">
                         <input type="email" disabled required name="email" id="email" class="input-txt form-control">
                     </div>
-
                 </div>
             </div>
-
             <!---------------------------------------------------->
-
             <div class="form-group">
                 <div class="btn-teste col-xs-12">
                     <button type="submit" class="btn btn-primary">Cadastrar</button>
                 </div>
             </div>
-
-
         </form>
     </div>
 </div>
-
 
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"
@@ -589,8 +542,6 @@ require_once "../models/Crud.php";
         integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU"
         crossorigin="anonymous"></script>
 
-</body>
-</html>
 
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 <script type="text/javascript">
@@ -642,8 +593,6 @@ require_once "../models/Crud.php";
         });
     });
 </script>
-
-
 <!-- Initialize Bootstrap functionality -->
 <script>
     // Initialize tooltip component
@@ -655,4 +604,6 @@ require_once "../models/Crud.php";
     $(function () {
         $('[data-toggle="popover"]').popover()
     })
-</script> 
+</script>
+</body>
+</html>
