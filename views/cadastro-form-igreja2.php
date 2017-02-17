@@ -156,7 +156,7 @@ require_once "../models/Crud.php";
                 echo '<th scope="row">' . $gridGrupo['id_igreja'] . '</th>';
                 echo '<td>' . $gridGrupo['nome'] . '</td>';
                 echo '<td>' . ' ' . '</td>';
-
+              
             }
             ?>
 
